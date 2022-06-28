@@ -1,0 +1,17 @@
+{
+  "name": "allight-design-system",
+  "version": "1.0.1",
+  "description": "allight desigh system",
+  "author": "kiwon kim",
+  "main": "./index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.2.37"
+  },
+  "dependencies": {
+    "allight-design-system": "^1.0.1"
+  }
+}

@@ -1,30 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <AButton @clickHandler="handleAlert"> 테스트입니당 </AButton>
+  </div>
 </template>
+<script lang="ts">
+import AButton from 'allight-design-system';
+import './test';
+export default {
+  components: {
+    AButton,
+  },
+  setup() {
+    const handleAlert = () => {
+      alert('테스트');
+    };
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+    return {
+      handleAlert,
+    };
+  },
+};
+</script>
+<style lang="">
 </style>
